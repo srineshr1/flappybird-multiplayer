@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\Ricky\\\\Desktop\\\\Projects\\\\browcode\\\\src\" -Recurse -File | Sort-Object FullName | ForEach-Object { $_.FullName -replace [regex]::Escape\\(\"C:\\\\Users\\\\Ricky\\\\Desktop\\\\Projects\\\\browcode\\\\src\"\\), \"src\" })",
+      "Bash(npx tsc *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3002)"
+    ]
+  }
+}
